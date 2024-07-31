@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "pytorch-templates"
+version = "0.1.0"
+description = ""
+authors = ["ivan golt <102701882+ivangolt@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{include = "pytorch_templates"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+jupyter = "^1.0.0"
+torch = "2.3.0"
+torchvision = "0.18.0"
+numpy = "1.26.4"
+pandas = "^2.2.2"
+scikit-learn = "^1.5.1"
+matplotlib = "^3.9.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
