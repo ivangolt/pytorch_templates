@@ -16,6 +16,8 @@ pandas = "^2.2.2"
 scikit-learn = "^1.5.1"
 matplotlib = "^3.9.1"
 tqdm = "^4.66.4"
+onnx = "^1.16.2"
+onnxruntime = "^1.18.1"
 
 
 [build-system]
