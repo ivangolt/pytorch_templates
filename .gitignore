@@ -4,3 +4,6 @@
 mnist/
 *.csv
 data/
+models/
+*.pth
+*.pyc
