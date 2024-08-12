@@ -6,4 +6,4 @@ mnist/
 data/
 models/
 *.pth
-*.pyc
+*.pycgit
