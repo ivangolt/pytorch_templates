@@ -1,9 +1,8 @@
 import os
-import torch
-import torch.nn as nn
-from tqdm import tqdm
-import torch.optim as optim
+
 import matplotlib.pyplot as plt
+import torch
+from tqdm import tqdm
 
 plt.style.use("ggplot")
 
@@ -19,7 +18,6 @@ class ClassifierTrainer:
         num_epochs=10,
         cuda: bool = True,
     ):
-
         self.cuda = cuda
         self.model = model
         self.model = self.model.cuda() if self.cuda else self.model.to("cpu")
@@ -52,7 +50,6 @@ class ClassifierTrainer:
                 desc=f"Epoch : {epoch+1}/{self.num_epochs}",
             )
             for i, (inputs, labels) in progress_bar:
-
                 # Zero the parameter gradients
                 self.optimizer.zero_grad()
 
@@ -151,7 +148,6 @@ def save_plots(train_acc, valid_acc, train_loss, valid_loss):
 
 
 class SaveBestModel:
-
     """
     Class to save the best model while training. If the current epoch's
     validation loss is less than the previous least less, then save the
